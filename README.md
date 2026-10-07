@@ -1,261 +1,218 @@
-# Awesome-Machine-Learning-Data-Preparation
-
-## Top Machine Learning Data Preparation Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Data Cleaning, Feature Engineering & Self-Hosted Data Preparation*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial data preparation platforms** and **open-source projects** that clean, transform, and enrich datasets for machine learning — from visual data wrangling tools to automated feature engineering libraries and data quality frameworks.
-
-
-
-**Examples** include Amazon SageMaker Data Wrangler, Alteryx Designer Cloud, Trifacta, Dataiku DSS, Databricks, Azure Data Factory Power Query, Coalesce, dbt Cloud, Tamr, and Prophecy.io (the category leaders).
-
-
-
-**Open-source emphasis**: Data preparation is one of the strongest open-source domains in ML. **AKDATA** delivers enterprise-grade automated preprocessing with data leakage protection and health scoring. **Gators** brings 75+ Polars-based transformers from PayPal. **LeCrapaud** unifies feature engineering, selection, and hyperparameter optimization in a single `fit()` call. **OMR** provides comprehensive dataset quality validation and drift detection. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Amazon SageMaker Data Wrangler](https://aws.amazon.com/sagemaker/data-wrangler/)**  
-
-  **AWS's visual data preparation tool** — 300+ built-in transformations with visual interface . **Feature Store integration and pipeline automation** . **Best for AWS-native data preparation** .
-
-
-
-- **[Alteryx Designer Cloud](https://www.alteryx.com/)**  
-
-  **The enterprise standard for visual data preparation** — drag-and-drop workflows with 300+ tools . **Best for enterprise data blending and analytics** .
-
-
-
-- **[Trifacta (Alteryx)](https://www.trifacta.com/)**  
-
-  **Cloud-native data wrangling** — machine learning-powered transformation suggestions . **Best for cloud data preparation** .
-
-
-
-- **[Dataiku DSS](https://www.dataiku.com/)**  
-
-  **Collaborative data science platform** — visual data prep, ML, and deployment . **Best for teams wanting visual and code-based workflows** .
-
-
-
-- **[Databricks](https://www.databricks.com/)**  
-
-  **Unified data and AI platform** — lakehouse architecture with data preparation capabilities . **Best for organizations using Spark and Delta Lake** .
-
-
-
-- **[dbt Cloud](https://www.getdbt.com/)**  
-
-  **Managed dbt platform** — SQL-based transformation with scheduling and documentation . **Best for analytics engineering** .
-
-
-
-- **[Coalesce](https://coalesce.io/)**  
-
-  **Data transformation platform** — column-aware SQL generation and automation . **Best for Snowflake-native data transformation** .
-
-
-
-- **[Tamr](https://www.tamr.com/)**  
-
-  **AI-powered data mastering** — entity resolution and data unification . **Best for master data management** .
-
-
-
-- **[Prophecy.io](https://www.prophecy.io/)**  
-
-  **Low-code data engineering** — visual pipeline builder for Apache Spark and SQL . **Best for Spark pipeline development** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Automated Data Preprocessing
-
-
-
-- **[AKDATA](https://github.com/arikaranrs/AKDATA)**  
-
-  **Enterprise-grade automated data preprocessing library**, open-source . **One-line API or modular pipelines** — detects missing values, removes duplicates, detects outliers, converts data types, encodes categoricals, generates features, selects features, splits train/test, scales numerics, and prevents data leakage . **Dataset Health Score (0-100)** based on missingness, duplicates, outliers, and type conflicts . **Data Leakage Protection** — automatically detects and flags target leakage before model training . **Fit-transform consistency** — computes statistics on training split and applies cleanly to test splits . **Automated HTML/PDF dashboards** with professional reports . **Best for production ML data preparation** .
-
-
-
-- **[OMR (Omni Data Refinement)](https://pypi.org/project/omni-data-refinement/)**  
-
-  **Pure Python framework for dataset quality, validation, and monitoring**, BSD-3-Clause licensed . **12 complete domains of data intelligence** — Health Engine (5-pillar quality score), Cleaning Engine (auto-resolution), Profiling Engine, Validation Engine (schema-based), Statistical Engine, Drift Engine (PSI, KS Test, JS Divergence), Monitoring System, Explainability, Versioning, Reporting, Pipelines, Plugin Registry . **Designed to be used immediately after loading a dataset**, similar to how Pandas is used for data manipulation . **Compatible with Pandas, Polars, and NumPy** . **No external AI APIs or LLMs required** . **Best for comprehensive data quality analysis** .
-
-
-
-### Feature Engineering
-
-
-
-- **[Gators](https://github.com/pspdatascience/gators)**  
-
-  **Lightning-fast data preprocessing and feature engineering library from PayPal**, open-source . **Built on Polars** for multi-core parallel processing . **75+ preprocessing transformers** covering data cleaning, categorical encoding, numeric feature generation, string feature generation, datetime features, missing value imputation, and discretization . **sklearn-style `.fit()` and `.transform()` interface** — if you know sklearn, you already know Gators . **Production ready** — deploy the same Python code from notebook to production . **Comprehensive encoders**: CatBoostEncoder, TargetEncoder, WOEEncoder, LeaveOneOutEncoder, and more . **Advanced feature generation**: Fourier features, group lag features, ratio features, polynomial combinations . **Best for high-performance feature engineering** .
-
-
-
-- **[LeCrapaud](https://pypi.org/project/lecrapaud/)**  
-
-  **High-level Python library for end-to-end ML on tabular and time series data**, open-source . **Automated feature engineering** — Fourier dates, target encoding, imputation . **Ensemble feature selection** with 10+ methods and voting . **Hyperparameter optimization** — HyperOpt + Ray Tune . **Multi-target support** — native regression + classification . **Deep learning models** — LSTM, GRU, TCN, Transformer . **Time series support** — Fourier features, temporal CV, RNNs . **Explainability** — SHAP + LIME + feature importance . **Experiment tracking** — full artifacts in PostgreSQL/MySQL . **All in one `fit()` call** while remaining transparent and customizable . **Best for complete ML workflows** .
-
-
-
-### Data Quality & Validation
-
-
-
-- **[SanitiPy](https://pypi.org/project/sanitify/)**  
-
-  **Intelligent data quality analysis and ML-assisted data cleaning**, open-source . **Structured dataset profiling** — schema-aware with scalable sampling . **Rule-based quality validation engine** with explainable weighted scoring . **Deterministic cleaning operations** — no hidden mutations, data is never altered silently . **ML-assisted fix suggestions** — confidence-scored, never auto-applied, human-in-the-loop by design . **Structured JSON report export** . **Production-oriented architecture** with test coverage . **Best for production data quality workflows** .
-
-
-
-- **[Desbordante](https://github.com/desbordante/desbordante-core)**  
-
-  **High-performance data profiler and cleaning tool**, open-source with **1,000+ GitHub stars** . **Discovers many different patterns in data** using various algorithms . **Allows running data cleaning scenarios** using discovered patterns . **Console version and easy-to-use web application** . **Best for pattern discovery and data profiling** .
-
-
-
-- **[Cleanlab](https://github.com/cleanlab/cleanlab)**  
-
-  **Data-centric AI library for label error detection**, open-source with **9,000+ GitHub stars** . **Implements confident learning framework** — iteratively refines label noise estimates by comparing model predictions with estimated label probabilities . **Active learning optimization** — selects most impactful examples for labeling . **Outlier detection** — identifies atypical data points . **Best for label quality improvement** .
-
-
-
-- **[Great Expectations](https://github.com/great-expectations/great_expectations)**  
-
-  **Data validation framework**, Apache-2.0 licensed with **9,000+ GitHub stars** . **Declarative data quality rules** — validate, document, and profile data . **Integrates with data pipelines** . **Best for data validation in production** .
-
-
-
-### Data Curation & Versioning
-
-
-
-- **[Argilla](https://github.com/argilla-io/argilla)**  
-
-  **Collaborative AI feedback and data curation platform**, Apache-2.0 licensed with **3,000+ GitHub stars** . **Human-in-the-loop dataset platform** — coordinate annotators and domain experts . **Focus on LLM dataset curation and RLHF workflows** . **Best for LLM data preparation** .
-
-
-
-- **[Hugging Face Datasets](https://github.com/huggingface/datasets)**  
-
-  **Library for managing and processing large-scale ML datasets**, Apache-2.0 licensed with **19,000+ GitHub stars** . **Memory-mapped file access and lazy streaming** — handles datasets exceeding system memory . **Versioning and reproducibility** . **Best for large-scale dataset management** .
-
-
-
-- **[Data-Juicer](https://github.com/modelscope/data-juicer)**  
-
-  **Distributed framework for cleaning and transforming multimodal datasets**, Apache-2.0 licensed with **5,000+ GitHub stars** . **YAML-based data recipes** for reproducible pipelines . **Handles billions of samples** with Ray clusters . **Best for LLM and vision dataset preparation** .
-
-
-
-- **[OpenRefine](https://github.com/OpenRefine/OpenRefine)**  
-
-  **General-purpose data cleaning and wrangling platform**, BSD-3-Clause licensed with **11,000+ GitHub stars** . **Web-based interface with faceting and clustering** . **Reconciliation engine for entity standardization** . **Best for interactive data cleaning** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **PrePro Auto** — Automated data cleaning with human-in-the-loop decision cards and versioning .
-
-- **dsbro** — Notebook-heavy data science toolkit for fast EDA and baseline models .
-
-- **Deesseia** — Unified data science toolkit from prototype to production .
-
-- **Athena** — ML diagnostics platform with leakage detection and preprocessing script export .
-
-- **Beaver FE** — Automated feature engineering with Bayesian optimization .
-
-- **Pandas** — The foundational data manipulation library .
-
-- **Polars** — Fast DataFrame library in Rust .
-
-- **Dask** — Parallel computing for larger-than-memory datasets .
-
-- **Apache Spark** — Distributed data processing for big data .
-
-
-
-**Frameworks for building custom data preparation solutions**: Combine **AKDATA** for automated preprocessing with leakage protection and health scoring . Use **Gators** for high-performance feature engineering on Polars . Deploy **LeCrapaud** for end-to-end ML with automated feature engineering and hyperparameter optimization . Choose **OMR** or **SanitiPy** for comprehensive data quality analysis and validation . Integrate **Desbordante** for pattern discovery or **Cleanlab** for label error detection . Use **Hugging Face Datasets** or **Data-Juicer** for large-scale dataset management . Note that true enterprise data preparation with visual interfaces, collaboration features, and vendor-supported SLAs (SageMaker Data Wrangler, Alteryx, Dataiku) remains primarily commercial territory; open-source stacks provide strong automated preprocessing, feature engineering, and data quality foundations that require integration for complete data preparation platforms.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Data preparation platforms handle sensitive training data and may process PII. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **Data leakage is the most common ML bug** — AKDATA and SanitiPy provide automated leakage detection, but manual review is still essential . Target leakage produces overoptimistic validation metrics and poor production performance.
-
-- **License considerations**: AKDATA is open-source , OMR uses BSD-3-Clause , Gators is open-source , LeCrapaud is open-source , and SanitiPy is open-source . Verify licensing against your use case before committing.
-
-- The open-source ecosystem provides strong automated preprocessing, feature engineering, and data quality foundations, but **visual interfaces, collaboration features, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Machine Learning Data Preparation Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Data-Preparation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Machine-Learning-Data-Preparation?style=social&color=white" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/sshandutta2007?label=Follow" /></a>
+</p>
+
+<h1 align="center">Awesome Machine Learning Data Preparation 🚀</h1>
+
+> **The definitive curated hub for Machine Learning Data Preparation 🧹, Automated Preprocessing ⚡, Data Cleaning 🧼, Feature Engineering ⚙️, and Data Quality Frameworks 🔍 in 2026.**
 
 ---
 
+Whether you are building enterprise ML pipelines 🏢, fine-tuning Large Language Models (LLMs) 🤖, or preparing complex tabular datasets 📊, clean and well-structured data is the foundation of high-performing AI models. This repository tracks top **commercial SaaS platforms** and **open-source GitHub tools** for end-to-end data wrangling, validation, and feature engineering.
 
+---
 
-**Made for ML engineers, data scientists, and organizations seeking data preparation sovereignty.**
+## 📌 Table of Contents
 
-Let's make machine learning data preparation more open, transparent, and automated.
+- [📊 Market Overview & Ecosystem Dynamics](#-market-overview--ecosystem-dynamics)
+- [💼 SaaS & Hosted Data Preparation Platforms](#-saas--hosted-data-preparation-platforms)
+- [🐍 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Key Features Comparison](#%EF%B8%8F-key-features-comparison)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Best Practices](#%EF%B8%8F-disclaimer--best-practices)
+- [💖 Support & Community](#-support--community)
+- [⭐ Star History](#-star-history)
+
+---
+
+## 📊 Market Overview & Ecosystem Dynamics
+
+> **📈 Sector Market Size & Dynamics**: The global machine learning data preparation market is estimated at **$5.2 Billion in 2026** and projected to reach **$14.8 Billion by 2030** (CAGR ~29.8%). The sector remains **moderately to highly fragmented**—competing across cloud hyperscalers, specialized ETL/transformation tools, visual data wrangling suites, and open-source data quality libraries without a single "winner-take-all" monopolist.
+
+---
+
+## 💼 SaaS & Hosted Data Preparation Platforms
+
+*Sorted by Company Size / Valuation (Descending)* 📉
+
+| Platform / Product | Starting Price 🏷️ | Free Tier / Trial Limit 🎁 | Company Valuation / Revenue 💰 | Primary Focus & Capabilities ⚡ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Azure Data Factory & Power Query](https://azure.microsoft.com/en-us/products/data-factory/)** 🌐 | ~$0.25 / DIU-hour (activity run dependent) | 12 Months Free Tier ($200 credits for 30 days + limited low-freq activities free) | **~$3.9 Trillion** Market Cap | Serverless data integration, ETL pipelines, and visual Power Query transformation interface. |
+| **[Amazon SageMaker Data Wrangler](https://aws.amazon.com/sagemaker/data-wrangler/)** ☁️ | ~$1.02 / hour (`ml.m5.4xlarge` instance) | 2 Months Free Tier (25 hours/month of `ml.m5.4xlarge`) | **~$2.1 Trillion** (AWS ~$100B+ ARR) | AWS visual data prep tool with 300+ built-in transformations and SageMaker Feature Store integration. |
+| **[Databricks Lakehouse](https://www.databricks.com/)** 🧱 | ~$0.07 – $0.40 per DBU (compute dependent) | 14-Day Free Trial ($400 free usage credits included) | **~$190 Billion** Valuation ($7B+ ARR) | Unified Data & AI platform powered by Spark, Delta Lake, and automated data processing. |
+| **[Alteryx Designer Cloud & Trifacta](https://www.alteryx.com/)** 🔄 | $250 / user / month (Starter Edition) | 30-Day Free Trial (Alteryx One cloud platform) | **~$4.4 Billion** Valuation ($1B+ ARR) | Enterprise standard for visual drag-and-drop data wrangling, blending, and predictive preparation. |
+| **[dbt Cloud](https://www.getdbt.com/)** 🛠️ | $100 / user / month (Starter Plan) | **Free Forever** Developer Plan (1 user, 1 project, up to 3,000 models/mo) | **~$4.2 Billion** Valuation ($100M+ ARR) | SQL-first data transformation platform with automated documentation, testing, and DAG scheduling. |
+| **[Dataiku DSS](https://www.dataiku.com/)** 🔬 | ~$4,000 / month (Estimated entry deployment) | 14-Day Free Trial (Plus Free Community Edition for local install) | **~$3.7 Billion** Valuation ($350M+ ARR) | Enterprise collaborative data science platform combining visual recipes with Python/R code environments. |
+| **[Tamr](https://www.tamr.com/)** 🧠 | Subscription per workspace (unlimited seats) | 30-Minute Free Interactive Demo (No self-service free tier) | **~$300 Million** Valuation ($140M+ total funding) | AI-powered data mastering, automated entity resolution, and schema unification at scale. |
+| **[Prophecy.io](https://www.prophecy.io/)** 🔮 | $150 / user / month (Professional Plan) | **Free Forever** Starter Plan (1 user, 20 credits/mo) / 21-Day Trial | **~$268 Million** Valuation ($159M total funding) | Low-code visual pipeline builder generating production-grade Apache Spark and SQL code. |
+| **[Coalesce.io](https://coalesce.io/)** ⚡ | $150 / user / month (Starter Plan) | **Free Forever** Developer Plan (1 user, 2,000 actions/mo) / 14-Day Trial | **~$225 Million** Valuation ($87M total funding) | Column-aware data transformation platform built natively for Snowflake environments. |
+
+---
+
+## 🐍 Open-Source GitHub Projects
+
+*Sorted by GitHub Star Count (Descending)* ⭐
+
+### 1. [DuckDB](https://github.com/duckdb/duckdb) 🦆
+[![GitHub stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+- **Description**: An in-process SQL OLAP database management system designed for fast analytical queries on tabular datasets, Parquet files, and CSVs directly from Python and R.
+- **Key Strengths**: Zero external dependencies, ultra-fast vector execution, seamless integration with Pandas and Arrow. 🚀
+
+### 2. [Polars](https://github.com/pola-rs/polars) 🐻‍❄️
+[![GitHub stars](https://img.shields.io/github/stars/pola-rs/polars?style=social&color=white)](https://github.com/pola-rs/polars/stargazers)
+- **Description**: Lightning-fast DataFrames library written in Rust with Python bindings, built for multi-threaded, memory-efficient data processing.
+- **Key Strengths**: Lazy evaluation engine, low memory footprint, out-of-core streaming data execution. ⚡
+
+### 3. [Hugging Face Datasets](https://github.com/huggingface/datasets) 🤗
+[![GitHub stars](https://img.shields.io/github/stars/huggingface/datasets?style=social&color=white)](https://github.com/huggingface/datasets/stargazers)
+- **Description**: Lightweight and extensible library to easily share, load, and preprocess audio, vision, and NLP datasets for Deep Learning & LLMs.
+- **Key Strengths**: Memory-mapped zero-copy file access, streaming support for multi-terabyte datasets, seamless PyTorch/TensorFlow integration. 📦
+
+### 4. [YData Profiling](https://github.com/ydataai/ydata-profiling) 📊
+[![GitHub stars](https://img.shields.io/github/stars/ydataai/ydata-profiling?style=social&color=white)](https://github.com/ydataai/ydata-profiling/stargazers)
+- **Description**: Generate comprehensive exploratory data analysis (EDA) reports from Pandas and Spark DataFrames with a single line of code.
+- **Key Strengths**: Automated missing value analysis, feature correlations, distribution metrics, and data drift detection. 📈
+
+### 5. [OpenRefine](https://github.com/OpenRefine/OpenRefine) 💎
+[![GitHub stars](https://img.shields.io/github/stars/OpenRefine/OpenRefine?style=social&color=white)](https://github.com/OpenRefine/OpenRefine/stargazers)
+- **Description**: Power tool for working with messy data—cleaning it, transforming it from one format into another, and extending it with web services.
+- **Key Strengths**: Interactive web-based UI, powerful clustering algorithms for entity deduplication, undo/redo history. 🧽
+
+### 6. [Great Expectations](https://github.com/great-expectations/great_expectations) ✅
+[![GitHub stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers)
+- **Description**: Industry standard framework for data validation, profiling, and pipeline documentation.
+- **Key Strengths**: Declarative quality assertions, automated HTML data docs generation, integrations with Airflow, dbt, Spark. 🎯
+
+### 7. [Cleanlab](https://github.com/cleanlab/cleanlab) 🧪
+[![GitHub stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
+- **Description**: The standard data-centric AI package for identifying mislabeled data and dataset noise across image, text, and tabular datasets.
+- **Key Strengths**: Confident Learning framework, automated label error detection, active learning optimization. 🎯
+
+### 8. [PyCaret](https://github.com/pycaret/pycaret) 🪄
+[![GitHub stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)
+- **Description**: Open-source, low-code machine learning library in Python that automates machine learning workflows including automated preprocessing and scaling.
+- **Key Strengths**: Automated missing value imputation, encoding, feature selection, and model training in a single workflow. 🤖
+
+### 9. [Evidently AI](https://github.com/evidentlyai/evidently) 🔮
+[![GitHub stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white)](https://github.com/evidentlyai/evidently/stargazers)
+- **Description**: Evaluation and monitoring framework for data quality, feature drift, and ML model performance.
+- **Key Strengths**: 100+ built-in metrics, interactive dashboarding, automated dataset drift checks for production ML. 📊
+
+### 10. [Featuretools](https://github.com/alteryx/featuretools) 🛠️
+[![GitHub stars](https://img.shields.io/github/stars/alteryx/featuretools?style=social&color=white)](https://github.com/alteryx/featuretools/stargazers)
+- **Description**: Framework for automated feature engineering using Deep Feature Synthesis (DFS) on relational and transactional datasets.
+- **Key Strengths**: Automatic aggregation and transformation features across multi-table datasets. ⚙️
+
+### 11. [Data-Juicer](https://github.com/modelscope/data-juicer) 🧃
+[![GitHub stars](https://img.shields.io/github/stars/modelscope/data-juicer?style=social&color=white)](https://github.com/modelscope/data-juicer/stargazers)
+- **Description**: One-stop data processing system for multimodal LLM pre-training and fine-tuning datasets.
+- **Key Strengths**: 50+ built-in data processing operators, Ray cluster distributed processing, customizable YAML recipes. 🦾
+
+### 12. [Argilla](https://github.com/argilla-io/argilla) 🦔
+[![GitHub stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers)
+- **Description**: Collaboration platform for LLM data curation, human feedback (RLHF), and high-quality synthetic data generation.
+- **Key Strengths**: Annotator coordination, active learning pipelines, Hugging Face Hub integration. 🤝
+
+### 13. [AWS Deequ](https://github.com/awslabs/deequ) 🛡️
+[![GitHub stars](https://img.shields.io/github/stars/awslabs/deequ?style=social&color=white)](https://github.com/awslabs/deequ/stargazers)
+- **Description**: Library built on top of Apache Spark for defining "unit tests for data" to validate large-scale datasets.
+- **Key Strengths**: Scalable metric computation, constraint validation, automated data profiling on Spark. ⚡
+
+### 14. [Soda Core](https://github.com/sodadata/soda-core) 🥤
+[![GitHub stars](https://img.shields.io/github/stars/sodadata/soda-core?style=social&color=white)](https://github.com/sodadata/soda-core/stargazers)
+- **Description**: CLI tool and Python library for data quality checking and dataset monitoring across SQL databases.
+- **Key Strengths**: Declarative SodaCL YAML checks, support for Snowflake, BigQuery, Postgres, and DuckDB. 🔍
+
+### 15. [Desbordante](https://github.com/Desbordante/desbordante-core) 🌊
+[![GitHub stars](https://img.shields.io/github/stars/Desbordante/desbordante-core?style=social&color=white)](https://github.com/Desbordante/desbordante-core/stargazers)
+- **Description**: High-performance C++ core data profiler and pattern discovery engine with web and CLI interfaces.
+- **Key Strengths**: Fast functional dependency discovery, outlier detection, data profiling. 🚀
+
+### 16. [Gators](https://github.com/paypal/gators) 🐊
+[![GitHub stars](https://img.shields.io/github/stars/paypal/gators?style=social&color=white)](https://github.com/paypal/gators/stargazers)
+- **Description**: Lightning-fast feature engineering and preprocessing library developed by PayPal, built on Polars.
+- **Key Strengths**: 75+ Polars-based transformers, scikit-learn API compliance, high-performance encoders. ⚡
+
+### 17. [OMR (Omni Data Refinement)](https://github.com/Omar-Alshafai2/omni-data-refinement) 🔬
+[![GitHub stars](https://img.shields.io/github/stars/Omar-Alshafai2/omni-data-refinement?style=social&color=white)](https://github.com/Omar-Alshafai2/omni-data-refinement/stargazers)
+- **Description**: Pure Python framework for dataset quality scoring, validation, drift detection, and monitoring.
+- **Key Strengths**: 12 domains of data intelligence, 5-pillar health score, zero external API dependencies. 🏥
+
+### 18. [AKDATA](https://github.com/arikaranrs/AKDATA) ⚡
+[![GitHub stars](https://img.shields.io/github/stars/arikaranrs/AKDATA?style=social&color=white)](https://github.com/arikaranrs/AKDATA/stargazers)
+- **Description**: Automated preprocessing library for tabular datasets with automated leakage protection and dataset health scoring.
+- **Key Strengths**: Automated missing value imputation, outlier detection, fit-transform split consistency. 🛡️
+
+### 19. [SanitiPy](https://github.com/adambenaamr/sanitipy) 🧼
+[![GitHub stars](https://img.shields.io/github/stars/adambenaamr/sanitipy?style=social&color=white)](https://github.com/adambenaamr/sanitipy/stargazers)
+- **Description**: Intelligent data quality analysis and ML-assisted data cleaning package.
+- **Key Strengths**: Structured dataset profiling, rule-based quality validation, human-in-the-loop cleaning suggestions. 💡
+
+---
+
+## 🛠️ Key Features Comparison
+
+| Category 🗂️ | Recommended Tools 🧰 | Primary Use Case 💡 |
+| :--- | :--- | :--- |
+| **High-Performance In-Memory Data Prep** ⚡ | Polars, DuckDB | Large-than-RAM tabular processing & fast SQL transformations |
+| **Automated Feature Engineering** ⚙️ | Featuretools, Gators | Relational aggregations, datetime features, target encoding |
+| **Data Quality & Validation** ✅ | Great Expectations, Soda Core, AWS Deequ | Automated data unit tests, schema assertions, pipeline gates |
+| **Data-Centric AI & Label Cleaning** 🧪 | Cleanlab, YData Profiling | Detecting noisy labels, outliers, and class imbalance |
+| **LLM & Multimodal Prep** 🤖 | Data-Juicer, Argilla, HF Datasets | Cleaning corpus text, synthetic data filtering, RLHF feedback |
+| **Enterprise Cloud Pipelines** ☁️ | SageMaker Data Wrangler, Databricks, dbt Cloud | Scalable corporate infrastructure, governed feature stores |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are highly welcome! To add a new SaaS platform or Open-Source project to this list:
+
+1. **Fork** 🍴 this repository.
+2. Update `README.md` following the established table / list formatting.
+3. Ensure all links, descriptions, and star counts/pricing details are accurate.
+4. Submit a **Pull Request** 🚀 with a clear title and description.
+
+---
+
+## ⚠️ Disclaimer & Best Practices
+
+- 👥 **Community Driven**: This is a curated resource and does not imply official endorsement of any commercial platform.
+- 🔒 **Data Privacy & Governance**: Data preparation platforms often handle sensitive PII (Personally Identifiable Information). Ensure proper encryption, role-based access control (RBAC), and regulatory compliance when choosing SaaS or open-source solutions.
+- 🛡️ **Preventing Target Leakage**: Data leakage is a critical issue in ML pipelines. Use fit-transform separation (e.g. computing scaling/imputation parameters strictly on training sets) to ensure models generalize accurately in production.
+
+---
+
+## 💖 Support & Community
+
+Thank you for visiting **Awesome Machine Learning Data Preparation**! If you find this curated list helpful for your ML engineering workflows, research, or enterprise data pipelines, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork the repo** and contribute new tools or updates.
+- 📢 **Share with your network** on Twitter/X, LinkedIn, and developer communities.
+- ☕ **Sponsor / Buy me a coffee**: Support ongoing open-source curation and maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)!
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor on GitHub"/>
+  </a>
+</p>
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Machine-Learning-Data-Preparation&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Machine-Learning-Data-Preparation&type=date&legend=top-left)
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for ML Engineers, Data Scientists, and Data Engineers worldwide.</b>
+</p>
