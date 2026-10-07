@@ -6,7 +6,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List"/></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Data-Preparation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Machine-Learning-Data-Preparation?style=social&color=white" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Machine-Learning-Data-Preparation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Machine-Learning-Data-Preparation?style=social&color=white" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/sshandutta2007?label=Follow" /></a>
 </p>
 
@@ -59,100 +59,100 @@ Whether you are building enterprise ML pipelines 🏢, fine-tuning Large Languag
 
 ## 🐍 Open-Source GitHub Projects
 
-*Sorted by GitHub Star Count (Descending)* ⭐
+*Sorted by GitHub Stars_Count (Descending)* ⭐
 
 ### 1. [DuckDB](https://github.com/duckdb/duckdb) 🦆
-[![GitHub stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
 - **Description**: An in-process SQL OLAP database management system designed for fast analytical queries on tabular datasets, Parquet files, and CSVs directly from Python and R.
 - **Key Strengths**: Zero external dependencies, ultra-fast vector execution, seamless integration with Pandas and Arrow. 🚀
 
 ### 2. [Polars](https://github.com/pola-rs/polars) 🐻‍❄️
-[![GitHub stars](https://img.shields.io/github/stars/pola-rs/polars?style=social&color=white)](https://github.com/pola-rs/polars/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/pola-rs/polars?style=social&color=white)](https://github.com/pola-rs/polars/stargazers)
 - **Description**: Lightning-fast DataFrames library written in Rust with Python bindings, built for multi-threaded, memory-efficient data processing.
 - **Key Strengths**: Lazy evaluation engine, low memory footprint, out-of-core streaming data execution. ⚡
 
 ### 3. [Hugging Face Datasets](https://github.com/huggingface/datasets) 🤗
-[![GitHub stars](https://img.shields.io/github/stars/huggingface/datasets?style=social&color=white)](https://github.com/huggingface/datasets/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/huggingface/datasets?style=social&color=white)](https://github.com/huggingface/datasets/stargazers)
 - **Description**: Lightweight and extensible library to easily share, load, and preprocess audio, vision, and NLP datasets for Deep Learning & LLMs.
 - **Key Strengths**: Memory-mapped zero-copy file access, streaming support for multi-terabyte datasets, seamless PyTorch/TensorFlow integration. 📦
 
 ### 4. [YData Profiling](https://github.com/ydataai/ydata-profiling) 📊
-[![GitHub stars](https://img.shields.io/github/stars/ydataai/ydata-profiling?style=social&color=white)](https://github.com/ydataai/ydata-profiling/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ydataai/ydata-profiling?style=social&color=white)](https://github.com/ydataai/ydata-profiling/stargazers)
 - **Description**: Generate comprehensive exploratory data analysis (EDA) reports from Pandas and Spark DataFrames with a single line of code.
 - **Key Strengths**: Automated missing value analysis, feature correlations, distribution metrics, and data drift detection. 📈
 
 ### 5. [OpenRefine](https://github.com/OpenRefine/OpenRefine) 💎
-[![GitHub stars](https://img.shields.io/github/stars/OpenRefine/OpenRefine?style=social&color=white)](https://github.com/OpenRefine/OpenRefine/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/OpenRefine/OpenRefine?style=social&color=white)](https://github.com/OpenRefine/OpenRefine/stargazers)
 - **Description**: Power tool for working with messy data—cleaning it, transforming it from one format into another, and extending it with web services.
 - **Key Strengths**: Interactive web-based UI, powerful clustering algorithms for entity deduplication, undo/redo history. 🧽
 
 ### 6. [Great Expectations](https://github.com/great-expectations/great_expectations) ✅
-[![GitHub stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/great-expectations/great_expectations?style=social&color=white)](https://github.com/great-expectations/great_expectations/stargazers)
 - **Description**: Industry standard framework for data validation, profiling, and pipeline documentation.
 - **Key Strengths**: Declarative quality assertions, automated HTML data docs generation, integrations with Airflow, dbt, Spark. 🎯
 
 ### 7. [Cleanlab](https://github.com/cleanlab/cleanlab) 🧪
-[![GitHub stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)
 - **Description**: The standard data-centric AI package for identifying mislabeled data and dataset noise across image, text, and tabular datasets.
 - **Key Strengths**: Confident Learning framework, automated label error detection, active learning optimization. 🎯
 
 ### 8. [PyCaret](https://github.com/pycaret/pycaret) 🪄
-[![GitHub stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)
 - **Description**: Open-source, low-code machine learning library in Python that automates machine learning workflows including automated preprocessing and scaling.
 - **Key Strengths**: Automated missing value imputation, encoding, feature selection, and model training in a single workflow. 🤖
 
 ### 9. [Evidently AI](https://github.com/evidentlyai/evidently) 🔮
-[![GitHub stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white)](https://github.com/evidentlyai/evidently/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social&color=white)](https://github.com/evidentlyai/evidently/stargazers)
 - **Description**: Evaluation and monitoring framework for data quality, feature drift, and ML model performance.
 - **Key Strengths**: 100+ built-in metrics, interactive dashboarding, automated dataset drift checks for production ML. 📊
 
 ### 10. [Featuretools](https://github.com/alteryx/featuretools) 🛠️
-[![GitHub stars](https://img.shields.io/github/stars/alteryx/featuretools?style=social&color=white)](https://github.com/alteryx/featuretools/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/alteryx/featuretools?style=social&color=white)](https://github.com/alteryx/featuretools/stargazers)
 - **Description**: Framework for automated feature engineering using Deep Feature Synthesis (DFS) on relational and transactional datasets.
 - **Key Strengths**: Automatic aggregation and transformation features across multi-table datasets. ⚙️
 
 ### 11. [Data-Juicer](https://github.com/modelscope/data-juicer) 🧃
-[![GitHub stars](https://img.shields.io/github/stars/modelscope/data-juicer?style=social&color=white)](https://github.com/modelscope/data-juicer/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/modelscope/data-juicer?style=social&color=white)](https://github.com/modelscope/data-juicer/stargazers)
 - **Description**: One-stop data processing system for multimodal LLM pre-training and fine-tuning datasets.
 - **Key Strengths**: 50+ built-in data processing operators, Ray cluster distributed processing, customizable YAML recipes. 🦾
 
 ### 12. [Argilla](https://github.com/argilla-io/argilla) 🦔
-[![GitHub stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social&color=white)](https://github.com/argilla-io/argilla/stargazers)
 - **Description**: Collaboration platform for LLM data curation, human feedback (RLHF), and high-quality synthetic data generation.
 - **Key Strengths**: Annotator coordination, active learning pipelines, Hugging Face Hub integration. 🤝
 
 ### 13. [AWS Deequ](https://github.com/awslabs/deequ) 🛡️
-[![GitHub stars](https://img.shields.io/github/stars/awslabs/deequ?style=social&color=white)](https://github.com/awslabs/deequ/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/awslabs/deequ?style=social&color=white)](https://github.com/awslabs/deequ/stargazers)
 - **Description**: Library built on top of Apache Spark for defining "unit tests for data" to validate large-scale datasets.
 - **Key Strengths**: Scalable metric computation, constraint validation, automated data profiling on Spark. ⚡
 
 ### 14. [Soda Core](https://github.com/sodadata/soda-core) 🥤
-[![GitHub stars](https://img.shields.io/github/stars/sodadata/soda-core?style=social&color=white)](https://github.com/sodadata/soda-core/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/sodadata/soda-core?style=social&color=white)](https://github.com/sodadata/soda-core/stargazers)
 - **Description**: CLI tool and Python library for data quality checking and dataset monitoring across SQL databases.
 - **Key Strengths**: Declarative SodaCL YAML checks, support for Snowflake, BigQuery, Postgres, and DuckDB. 🔍
 
 ### 15. [Desbordante](https://github.com/Desbordante/desbordante-core) 🌊
-[![GitHub stars](https://img.shields.io/github/stars/Desbordante/desbordante-core?style=social&color=white)](https://github.com/Desbordante/desbordante-core/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Desbordante/desbordante-core?style=social&color=white)](https://github.com/Desbordante/desbordante-core/stargazers)
 - **Description**: High-performance C++ core data profiler and pattern discovery engine with web and CLI interfaces.
 - **Key Strengths**: Fast functional dependency discovery, outlier detection, data profiling. 🚀
 
 ### 16. [Gators](https://github.com/paypal/gators) 🐊
-[![GitHub stars](https://img.shields.io/github/stars/paypal/gators?style=social&color=white)](https://github.com/paypal/gators/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/paypal/gators?style=social&color=white)](https://github.com/paypal/gators/stargazers)
 - **Description**: Lightning-fast feature engineering and preprocessing library developed by PayPal, built on Polars.
 - **Key Strengths**: 75+ Polars-based transformers, scikit-learn API compliance, high-performance encoders. ⚡
 
 ### 17. [OMR (Omni Data Refinement)](https://github.com/Omar-Alshafai2/omni-data-refinement) 🔬
-[![GitHub stars](https://img.shields.io/github/stars/Omar-Alshafai2/omni-data-refinement?style=social&color=white)](https://github.com/Omar-Alshafai2/omni-data-refinement/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Omar-Alshafai2/omni-data-refinement?style=social&color=white)](https://github.com/Omar-Alshafai2/omni-data-refinement/stargazers)
 - **Description**: Pure Python framework for dataset quality scoring, validation, drift detection, and monitoring.
 - **Key Strengths**: 12 domains of data intelligence, 5-pillar health score, zero external API dependencies. 🏥
 
 ### 18. [AKDATA](https://github.com/arikaranrs/AKDATA) ⚡
-[![GitHub stars](https://img.shields.io/github/stars/arikaranrs/AKDATA?style=social&color=white)](https://github.com/arikaranrs/AKDATA/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/arikaranrs/AKDATA?style=social&color=white)](https://github.com/arikaranrs/AKDATA/stargazers)
 - **Description**: Automated preprocessing library for tabular datasets with automated leakage protection and dataset health scoring.
 - **Key Strengths**: Automated missing value imputation, outlier detection, fit-transform split consistency. 🛡️
 
 ### 19. [SanitiPy](https://github.com/adambenaamr/sanitipy) 🧼
-[![GitHub stars](https://img.shields.io/github/stars/adambenaamr/sanitipy?style=social&color=white)](https://github.com/adambenaamr/sanitipy/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/adambenaamr/sanitipy?style=social&color=white)](https://github.com/adambenaamr/sanitipy/stargazers)
 - **Description**: Intelligent data quality analysis and ML-assisted data cleaning package.
 - **Key Strengths**: Structured dataset profiling, rule-based quality validation, human-in-the-loop cleaning suggestions. 💡
 
@@ -177,7 +177,7 @@ Contributions are highly welcome! To add a new SaaS platform or Open-Source proj
 
 1. **Fork** 🍴 this repository.
 2. Update `README.md` following the established table / list formatting.
-3. Ensure all links, descriptions, and star counts/pricing details are accurate.
+3. Ensure all links, descriptions, and Stars_Counts/pricing details are accurate.
 4. Submit a **Pull Request** 🚀 with a clear title and description.
 
 ---
