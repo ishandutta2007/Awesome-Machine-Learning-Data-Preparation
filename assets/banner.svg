@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="cyan-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="node-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      50% { opacity: 0.8; transform: scale(1.02); }
+      100% { opacity: 0.3; transform: scale(0.98); }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .bg-grid { opacity: 0.07; stroke: #94a3b8; stroke-width: 1; }
+    .glowing-line { stroke: url(#cyan-purple); stroke-width: 2.5; fill: none; opacity: 0.6; stroke-dasharray: 8 4; animation: flowLine 15s linear infinite; }
+    .particle { animation: floatParticle 4s ease-in-out infinite; }
+    .title-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 18px; fill: #94a3b8; }
+    .badge-pill { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Background Grid -->
+  <g class="bg-grid">
+    <path d="M 0,60 L 1200,60 M 0,120 L 1200,120 M 0,180 L 1200,180 M 0,240 L 1200,240 M 0,300 L 1200,300" />
+    <path d="M 120,0 L 120,360 M 240,0 L 240,360 M 360,0 L 360,360 M 480,0 L 480,360 M 600,0 L 600,360 M 720,0 L 720,360 M 840,0 L 840,360 M 960,0 L 960,360 M 1080,0 L 1080,360" />
+  </g>
+
+  <!-- Dynamic Animated Graph & Network Elements (Placed in background & sides) -->
+  <g opacity="0.35">
+    <!-- Flow Connections -->
+    <path d="M 100 280 Q 250 320 400 260 T 700 290 T 1050 250" class="glowing-line" />
+    <path d="M 150 70 Q 350 30 550 80 T 950 40" class="glowing-line" />
+
+    <!-- Network Nodes -->
+    <circle cx="150" cy="70" r="6" fill="#38bdf8" class="particle" />
+    <circle cx="400" cy="260" r="8" fill="#818cf8" class="particle" />
+    <circle cx="700" cy="290" r="5" fill="#c084fc" class="particle" />
+    <circle cx="950" cy="40" r="7" fill="#38bdf8" class="particle" />
+    <circle cx="1050" cy="250" r="9" fill="#34d399" class="particle" />
+  </g>
+
+  <!-- Decorative Modern Data Pipeline Cards (Flanking Sides) -->
+  <g filter="url(#shadow)" opacity="0.4" class="particle">
+    <rect x="50" y="160" width="130" height="70" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="70" y="190" font-family="sans-serif" font-size="12" fill="#38bdf8" font-weight="bold">📥 RAW DATA</text>
+    <text x="70" y="210" font-family="sans-serif" font-size="11" fill="#64748b">CSV / Parquet</text>
+
+    <rect x="1020" y="140" width="130" height="70" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="1040" y="170" font-family="sans-serif" font-size="12" fill="#34d399" font-weight="bold">⚡ ML READY</text>
+    <text x="1040" y="190" font-family="sans-serif" font-size="11" fill="#64748b">Cleaned &amp; Encoded</text>
+  </g>
+
+  <!-- Foreground Main Content (Center Stage - Crisp & Unobstructed) -->
+  <g text-anchor="middle" filter="url(#shadow)">
+    <!-- Top Pill Category Badge -->
+    <rect x="440" y="45" width="320" height="34" rx="17" fill="#1e1b4b" stroke="url(#cyan-purple)" stroke-width="1.5" />
+    <text x="600" y="67" class="badge-pill" text-anchor="middle">⚡ DATA ENGINEERING &amp; AI PIPELINES</text>
+
+    <!-- Main Title -->
+    <text x="600" y="145" class="title-text">Awesome ML Data Preparation</text>
+
+    <!-- Title Underline Accent -->
+    <rect x="420" y="165" width="360" height="4" rx="2" fill="url(#cyan-purple)" filter="url(#glow)" />
+
+    <!-- Subtitle -->
+    <text x="600" y="215" class="subtitle-text">Curated SaaS Platforms &amp; Open-Source Tools for Data Cleaning,</text>
+    <text x="600" y="242" class="subtitle-text">Feature Engineering, Preprocessing &amp; Data Quality Frameworks</text>
+
+    <!-- Feature Tags -->
+    <g font-family="sans-serif" font-size="12" fill="#cbd5e1" font-weight="600">
+      <rect x="310" y="280" width="160" height="28" rx="14" fill="#0f172a" stroke="#334155" />
+      <text x="390" y="298" text-anchor="middle">🧹 Data Cleaning</text>
+
+      <rect x="490" y="280" width="180" height="28" rx="14" fill="#0f172a" stroke="#334155" />
+      <text x="580" y="298" text-anchor="middle">⚙️ Feature Engineering</text>
+
+      <rect x="690" y="280" width="180" height="28" rx="14" fill="#0f172a" stroke="#334155" />
+      <text x="780" y="298" text-anchor="middle">🔍 Data Quality &amp; Drift</text>
+    </g>
+  </g>
+</svg>
